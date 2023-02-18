@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Money Transfer</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@2.50.1/dist/full.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <div class="container mx-auto mb-12">
+      <h2 class="mt-12">
+        <img src="img/logo.png" class="mx-auto block" alt="" />
+      </h2>
+      <div class="mt-12 grid grid-cols-1 md:grid-cols-2 gap-10">
+        <div class="h-full">
+          <img src="img/money.png" class="w-full h-full" alt="" />
+        </div>
+        <div class="bg-[#F8F8F8] text-center py-8 h-full">
+          <h3 class="text-2xl font-bold text-black">Income</h3>
+          <div
+            class="mt-6 bg-red-50 md:flex justify-between w-3/5 mx-auto items-center"
+          >
+            <label for="" class="text-sm font-semibold text-black w-2/6"
+              >Income:</label
+            >
+            <input
+              id="income-field"
+              type="text"
+              placeholder="Place Your Earning Amount"
+              class="input input-bordered w-full max-w-xs rounded-lg bg-[#DCDCDC]"
+            />
+          </div>
+          <h3 class="text-2xl font-bold text-black mt-7">Expenses</h3>
+          <div
+            class="mt-5 bg-red-50 md:flex justify-between w-3/5 mx-auto items-center"
+          >
+            <label for="" class="text-sm font-semibold text-black w-2/6"
+              >Food:</label
+            >
+            <input
+              id="food-field"
+              type="text"
+              placeholder="Place food invest"
+              class="input input-bordered w-full max-w-xs rounded-lg bg-[#DCDCDC]"
+            />
+          </div>
+          <div
+            class="mt-5 bg-red-50 md:flex justify-between w-3/5 mx-auto items-center"
+          >
+            <label for="" class="text-sm font-semibold text-black w-2/6"
+              >Rent:</label
+            >
+            <input
+              id="rent-field"
+              type="text"
+              placeholder="Place Rent invest"
+              class="input input-bordered w-full max-w-xs rounded-lg bg-[#DCDCDC]"
+            />
+          </div>
+          <div
+            class="mt-5 bg-red-50 md:flex justify-between w-3/5 mx-auto items-center"
+          >
+            <label for="" class="text-sm font-semibold text-black w-2/6"
+              >Clothes:</label
+            >
+            <input
+              id="clothes-field"
+              type="text"
+              placeholder="Place Clothes Invest"
+              class="input input-bordered w-full max-w-xs rounded-lg bg-[#DCDCDC]"
+            />
+          </div>
+          <button id="calculate-btn" class="btn btn-primary mt-5">
+            Calculate
+          </button>
+          <h2 class="text-2xl font-semibold mt-5">
+            Total Expenses: <span id="total-expense">5500</span>
+          </h2>
+          <h2 class="text-2xl font-semibold mt-5">
+            Balance: <span id="total-balance">4500</span>
+          </h2>
+          <div class="mt-5">
+            <label for="" class="text-sm font-semibold text-black">Save:</label>
+            <input
+              id="save-field"
+              type="text"
+              placeholder="Savings"
+              class="input input-bordered max-w-xs rounded-lg bg-[#DCDCDC] w-32"
+            />
+            <label for="">%</label>
+            <button id="save-btn" class="btn btn-primary mt-6">SAVE</button>
+          </div>
+          <h2 class="text-2xl font-semibold mt-5">
+            Saving Amount: <span id="saving-amount">2000</span>
+          </h2>
+          <h2 class="text-2xl font-semibold mt-5">
+            Remaining Balance: <span id="remaining-balance"> 2500 </span>
+          </h2>
+        </div>
+      </div>
+    </div>
+    <script src="js/main.js"></script>
+  </body>
+</html>
